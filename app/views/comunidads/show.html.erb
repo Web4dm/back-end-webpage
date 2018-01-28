@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @comunidad.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @comunidad.body %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @comunidad.link %>
+</p>
+
+<%= link_to 'Edit', edit_comunidad_path(@comunidad), class: "btn btn-link" %> |
+<%= link_to 'Back', comunidads_path, class: "btn btn-link" %>
