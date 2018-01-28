@@ -69,6 +69,6 @@ class ComunidadsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comunidad_params
-      params.require(:comunidad).permit(:title, :body, :link)
+      params.require(:comunidad).permit(:title, :body, :link, :image)
     end
 end
