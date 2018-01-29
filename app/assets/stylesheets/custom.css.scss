@@ -1,0 +1,45 @@
+.jumbotron { /* Desde aqui empieza el banner */
+  background-color: black;
+  border: 7px solid #7f1368;
+  -webkit-animation: mymove 5s infinite;
+  animation: mymove 5s infinite;
+
+  h2 {
+    color: #F7D957;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+
+  h3 {
+    color: #F2BF4C;
+  }
+/* Esta parte de aca es del borde animado que cambia de colores automaticamente*/
+  @-webkit-keyframes mymove {
+    50% {border-color: #7f1368;}
+  }
+
+  @keyframes mymove {
+    50% {border-color: #5645ad;}
+  }
+} /* Aqui termina el banner y el animado del banner para comenzar con el navegador*/
+.navbar-default {
+  .container-fluid {
+    background-color: black;
+    .navbar-nav > li > a {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .navbar-brand {
+      color: black;
+      font-weight: bold;
+      font-size: x-large;
+      font-family: "Lato Semibold";
+      text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    }
+  }
+}
+
+.container-fluid {
+  padding: 10px 120px;
+}
