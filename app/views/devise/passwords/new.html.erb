@@ -1,15 +1,17 @@
-<h2>Forgot your password?</h2>
+<h2>Reset your password</h2>
+
+<p> Enter your email adress and we will</br>send you a link to reset your password</p>
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
+  <div class="form-group">
+    <%= f.submit "Send password reset email", class: "btn btn-success" %>
   </div>
 <% end %>
 
