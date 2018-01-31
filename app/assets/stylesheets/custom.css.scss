@@ -1,4 +1,5 @@
-.jumbotron { /* Desde aqui empieza el banner */
+/* Desde aqui empieza el banner */
+.jumbotron {
   background-color: black;
   border: 7px solid #7f1368;
   -webkit-animation: mymove 5s infinite;
@@ -14,6 +15,7 @@
     color: #F2BF4C;
   }
 /* Esta parte de aca es del borde animado que cambia de colores automaticamente*/
+
   @-webkit-keyframes mymove {
     50% {border-color: #7f1368;}
   }
@@ -21,25 +23,68 @@
   @keyframes mymove {
     50% {border-color: #5645ad;}
   }
-} /* Aqui termina el banner y el animado del banner para comenzar con el navegador*/
+}
+/* Aqui termina el banner y el animado del banner para comenzar con el navegador*/
+
 .navbar-default {
   .container-fluid {
     background-color: black;
-    .navbar-nav > li > a {
+    .navbar-nav  > li > a {
       color: #ffffff;
-      font-size: 16px;
       font-weight: bold;
+      font-size: 16px;
+
+      /* Sesgado del navegador
+
+      margin: 0;
+      padding: 0;
+
+      .li {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .a {
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+        line-height: 60px;
+        padding: 0 35px;
+        letter-spacing: 2px;
+        position: relative;
+        font-weight: 300;
+      &:after
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #730E15;
+        z-index: -1;
+        transform: skewX(-30deg);
+        opacity: 0;
+        transition: opacity .3s;
+
+        &:hover, &:focus
+        a
+          color: white;
+          &:after
+            opacity: 1;
+
+
+      } /* aqui termina experimento del sesgado para el navegador */
     }
     .navbar-brand {
       color: black;
       font-weight: bold;
       font-size: x-large;
-      font-family: "Lato Semibold";
+      font-family: "Ubuntu Condensed";
       text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
     }
   }
 }
 
 .container-fluid {
-  padding: 10px 80px;
+  padding: 10px 10px;
 }

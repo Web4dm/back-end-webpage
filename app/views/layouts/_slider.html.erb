@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+
+      <div id="slider" class="carousel slide" data-ride="carousel">
+
+        <!-- puntitos para el slide, cuentan desde 0 dependiendo cuantos slides tengas vas agregando aqui -->
+        <ol class="carousel-indicators">
+          <li data-target="#slider" data-slide-to="0"class="active"></li>
+          <li data-target="#slider" data-slide-to="1"></li>
+          <li data-target="#slider" data-slide-to="2"></li>
+          <li data-target="#slider" data-slide-to="3"></li>
+        </ol>
+
+        <!-- envoltura para el slider -->
+        <div class="carousel-inner" role="listbox">
+
+          <!-- primer slide -->
+
+          <div class="item active">
+            <%= image_tag("block-chain-2850276_1280.jpg", :alt => "blockchain", :size => "1100x10") %>
+            <div class="carousel-caption">
+              <h1>Block-Chain system</h1>
+            </div>
+          </div>
+
+          <!-- segundo slide -->
+
+          <div class="item">
+            <%= image_tag("code-1839406_1280.jpg", :alt => "programming", :size => "1100x10") %>
+            <div class="carousel-caption">
+              <h1>Learn Programming</h1>
+            </div>
+          </div>
+
+          <!-- tercer slide -->
+
+          <div class="item">
+            <%= image_tag("board-453758_1280.jpg", :alt => "Board Circuit", :size => "1100x10") %>
+            <div class="carousel-caption">
+              <h1>Learn to build your own board</h1>
+              <p>El circuito esta conformado por diferentes componentes..</p>
+            </div>
+          </div>
+
+          <!-- cuarto slide -->
+
+          <div class="item">
+            <%= image_tag("printed-circuit-board-3113719_1280.jpg", :alt => "Board Circuit", :size => "1100x10") %>
+            <div class="carousel-caption">
+              <h1>Printed Board</h1>
+              <p>El circuito es un prueba para el slider por diferentes componentes..</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- boton previo para el slider -->
+        <a class="left carousel-control" href="#slider" role="button" data-slide="prev" >
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <!-- boton siguiente para el slider -->
+        <a class="right carousel-control" href="#slider" role="button" data-slide="next" >
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

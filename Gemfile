@@ -35,6 +35,8 @@ gem 'mini_magick'
 
 gem 'devise', '~> 4.4', '>= 4.4.1'
 
+# gem 'mandrill-api' mailer
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'

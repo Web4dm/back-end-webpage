@@ -1,3 +1,5 @@
+<%= render 'layouts/slider' %>
+<br>
 <div class="jumbotron">
   <h2>Welcome to the platform 4DMethod</h2>
   <h3>Explore the Community, Blueprint system and play SDA<br>
@@ -33,5 +35,5 @@
 <br>
 
 <%= link_to 'Nuevo blog', new_comunidad_path %><br>
-<%= image_tag("piefondo", :alt => "rss feed", :size => "1200x200") %>
-
+<%= image_tag("piefondo", :alt => "rss feed", :size => "1200x900") %>
+<%= yield %>
